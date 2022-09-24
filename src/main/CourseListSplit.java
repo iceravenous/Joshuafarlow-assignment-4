@@ -16,8 +16,6 @@ public class CourseListSplit {
 		Student[] statStudents = new Student[statNumber];
 		Student[] apmthStudents = new Student[apmthNumber];
 
-
-
 		apmthStudents = courseFilter("APMTH", students, apmthNumber);
 		Arrays.sort(apmthStudents);
 		compsciStudents = courseFilter("COMPSCI", students, compsciNumber);
@@ -28,7 +26,6 @@ public class CourseListSplit {
 		FileService.readFile(compsciStudents, "course1.csv" );
 		FileService.readFile(apmthStudents, "course2.csv" );
 		FileService.readFile(statStudents, "course3.csv" );
-	
 	}
 	
 	public static Student[] courseFilter(String courseName, Student[] students, Integer courseNumber) {
